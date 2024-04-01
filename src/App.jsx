@@ -1,15 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import MainLayout from './pages/MainLayout'
+import Home from './pages/Home'
+import Reviews from './pages/Reviews'
+import Articles from './pages/Articles'
+import Movies from './pages/Movies'
+import Movie from './components/Movie'
+import ErrorPage from './pages/ErrorPage'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import {
+  createBrowserRouter,
+  RouterProvider
+} from 'react-router-dom'
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: 'home',
+        element: <Home />,
+      },
+      {
+        path: 'reviews',
+        element: <Reviews />,
+      },
+      {
+        path: 'articles',
+        element: <Articles />,
+      },
+      {
+        path: 'movies',
+        element: <Movies />,
+        children: [
+          {
+            path: ':movieId',
+            element: <Movie />,
+          }
+        ]
+      },
+    ]
+  }
+])
+
+function App() {
   return (
-    <>
-      <h1>Filmovy magazín</h1>
-    </>
+    <RouterProvider router={router} />
   )
 }
 

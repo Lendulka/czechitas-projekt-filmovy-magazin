@@ -1,0 +1,6 @@
+.movies-container {
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}

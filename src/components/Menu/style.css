@@ -1,0 +1,21 @@
+.menu {
+    display: flex;
+    background-color: #e5e5e5;
+    justify-content: center;
+}
+
+.menu a {
+    display: block;
+    padding: 1rem 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #a0cfff;
+}
+
+.menu a.active {
+    background-color: #53a9ff;
+    color: #FFFF;
+}

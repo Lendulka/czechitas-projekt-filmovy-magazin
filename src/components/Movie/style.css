@@ -1,0 +1,39 @@
+.movie-bold {
+    font-weight: bold;
+}
+
+.movie-poster {
+    box-shadow: 12px 8px 6px 1px rgb(185, 183, 183);
+}
+
+.movie-container {
+    display: flex;
+    gap: 5rem;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(212, 210, 210);
+    padding: 0.5rem 1rem;
+    margin-top: 1.5rem;
+}
+
+.movie-title {
+    margin: 0;
+}
+
+.movie-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.movie-details p {
+    margin: 0;
+}
