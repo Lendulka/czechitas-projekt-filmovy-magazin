@@ -20,7 +20,8 @@ V projektu použijeme React Router, abychom se mohli mezi jednotlivými stránka
 
 Struktura celé naší aplikace bude vypadat následovně:
 
-![Rozložení komponent](rozlozeni-komponent.png)
+
+![Rozložení komponent](/public/rozlozeni-komponent.png)
 
 
 ## Zadání úkolu

@@ -39,7 +39,6 @@ function Movie() {
                 <p>{castStyle} {movieCast}</p>
                 <p>{movieResult.storyline}</p>
             </div>
-
         </div>
     )
 }
